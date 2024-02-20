@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <style>
+     
+.city:hover{
+  border: solid rgb(102, 214, 136);
+}
+      /* .offcanvas{
+        width: 20% !important;
+      } */
+    </style>
+   <link rel="stylesheet" href="/assets/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-md bg-success" style="background-color: #e3f2fd;" id="navbar-example2">
+      
+      <div class="container">
+        <a class="btn mx-3" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+          <i class="bi bi-list text-light"></i>
+        </a>
+          
+       
+        <a class="navbar-brand text-light" href="#">Navbar</a>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#scrollspyHeading1">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#scrollspyHeading2">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu bg-success">
+                <li><a class="dropdown-item" href="#scrollspyHeading3">Action</a></li>
+                <li><a class="dropdown-item" href="#scrollspyHeading4">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled text-light" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <!-- <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+  </header>
+ 
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+ 
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel" name="slider">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"  class="active"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner" id="scrollspyHeading1">
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="/assets/images/eifel tower.avif" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="/assets/images/nayagara fall.webp" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="/assets/images/tajmahal.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="/assets/images/Travel-china-great-wall.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  
+  
+  
+    <div class="container-fluid">
+        <div class="offcanvas offcanvas-start bg-success" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-light" id="offcanvasExampleLabel">Side Navigation</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body bg-success-subtle">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Districts
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><a href="#" class="text-decoration-none text-dark"><div class="container city">Jaffna</div></a>
+                  <a href="#" class="text-decoration-none text-dark"><div class="container city">Colombo</div></a>
+                  <a href="#" class="text-decoration-none text-dark"><div class="container city">Kilinochchi</div></a>
+                  <a href="#" class="text-decoration-none text-dark"><div class="container city">Vavuniya</div></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Accordion Item #2
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Accordion Item #3
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  <div class="container mt-3" id="scrollspyHeading2">
+    <div class="row">
+      <div class="col-lg-3 col-md-6"><div class="card">
+        <img src="/assets/images/nayagara fall.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="card">
+          <img src="/assets/images/tajmahal.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="card">
+          <img src="/assets/images/GettyImages-654013042-28f42fc82c544a9fb0f74458b85de713.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="card">
+          <img src="/assets/images/taj.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+    <div class="row mt-3">
+      <div class="col-lg-3 col-md-6"><div class="card">
+        <img src="/assets/images/Overview-Great-Wall-of-China.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="card">
+          <img src="/assets/images/eifel tower.avif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="card">
+          <img src="/assets/images/GettyImages-654013042-28f42fc82c544a9fb0f74458b85de713.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="card">
+          <img src="/assets/images/imrs.avif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+      <div class="container mt-5" id="scrollspyHeading3">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium vel eum inventore quia quos ducimus dolorem impedit quaerat quo animi eos, et in? Exercitationem eius possimus, et itaque ipsam facere.
+      Et ipsam, quibusdam officiis eum voluptas quidem, recusandae nisi explicabo dolores illo corporis eaque! Cum obcaecati tenetur, dolorum rerum quasi, dolor officiis sunt consequuntur incidunt iste dolores, aliquid quam vitae?
+      Ratione nemo possimus reiciendis blanditiis suscipit. Quidem, aperiam facilis architecto minima eum quia debitis ut illum adipisci corporis consequuntur explicabo praesentium nulla rem repellendus voluptas facere illo. Laudantium, corporis debitis.<br><br>
+      Adipisci recusandae laborum ratione dolorum, molestias ipsam! Eum incidunt porro perspiciatis ab omnis, eius iure recusandae alias maiores doloremque? Aliquam maxime magni doloremque, qui quis quo optio fugit impedit id.
+      Hic, id ipsam maxime nihil sed quidem. Provident illum fugiat aperiam voluptatem! Est sapiente iste, deleniti quis animi temporibus amet sunt id non unde ad modi dolorem repellat repellendus laboriosam?
+      Amet sequi unde vitae, quae quo eius quos dolores assumenda quas eum adipisci totam dolore optio, repellat voluptas natus officia accusamus architecto fuga vel aperiam. Repudiandae tempore possimus earum in.
+      Pariatur ab magnam, ipsam maxime, nihil quam quidem modi provident, error iure dolores illo fuga doloremque vitae? Quisquam voluptate, molestiae debitis voluptates quaerat labore dicta voluptas reprehenderit voluptatum, quasi eos.
+      Animi ipsa vero laborum labore porro odit maiores minus sed quidem, voluptatem cumque placeat ab hic, ratione, nemo ullam? Repellendus tempora eaque sint magni recusandae ipsum voluptatibus ut suscipit inventore.
+      Veritatis error doloribus, ipsa mollitia eos quasi accusamus tempora eaque adipisci placeat iure dolores! Accusamus ad eveniet modi velit a! Reiciendis, dolorum voluptates! Eveniet maiores ipsum fugiat dignissimos modi ut!
+      Distinctio aspernatur, suscipit ducimus sequi dolorum facere qui deserunt neque. At doloremque ea molestias vitae ad libero consectetur quis ipsum odit nemo veniam eum dolores asperiores facere, ducimus, corporis excepturi.
+      Officiis, commodi architecto. Modi architecto illo labore minima incidunt, recusandae aperiam culpa atque? Quasi error veniam tempora laborum repellendus incidunt dolore esse dolorem, amet molestiae labore harum? Blanditiis, similique praesentium?<br><br>
+      Eveniet alias officiis sed odio eum quo sunt, nostrum fuga nam nemo officia et soluta. Harum eveniet delectus animi! Optio reprehenderit iste incidunt earum laboriosam nostrum, tempore cum est exercitationem?
+      Soluta accusamus, eius aspernatur sint veritatis earum nesciunt laborum possimus natus tempore tempora placeat praesentium fugit, eum consectetur. Est itaque ipsa doloremque accusamus quidem adipisci a minus culpa blanditiis? Dolor.
+      Architecto expedita cum hic natus placeat nobis libero excepturi ullam, quos error explicabo quibusdam beatae sed tempore! Fugiat ex quam asperiores molestiae, dicta ea consequuntur consequatur, voluptatibus voluptatum placeat doloremque?
+      Sint cum exercitationem quia officia adipisci. Placeat, veniam! Repellendus impedit quaerat officiis ex illum asperiores placeat porro doloribus adipisci reiciendis accusamus, architecto eius voluptatem itaque. Reiciendis qui officiis laboriosam illo!
+      Et fuga animi numquam totam quia omnis facere. Reiciendis vitae eos illo, aut nostrum facere blanditiis in dolore error, saepe similique sit totam aspernatur provident atque repellendus labore consequuntur dolorum.
+      Perspiciatis similique necessitatibus modi ex debitis officia beatae? Vel veniam tempora nam, ex reiciendis explicabo et. Aspernatur placeat similique totam, hic facilis officiis doloremque sunt doloribus iure facere assumenda minima.
+      Expedita, accusantium nobis similique quas doloremque ab! Molestiae repellat perspiciatis laborum ea illo nobis at a voluptates, rerum dolorum suscipit harum rem architecto eum ut! At sapiente vel odio laborum.
+      Voluptas modi exercitationem dicta nemo asperiores facere pariatur illo debitis nulla aspernatur, quia, minima quasi natus, tempora quos veritatis. Repellendus maxime voluptates dolor perferendis ipsa fugiat officiis, inventore in porro!<br><br>
+      Vel, harum. Fuga, quae soluta qui officia, quis sed quisquam quod corporis quia temporibus expedita, iusto sit possimus voluptate eveniet sint ex delectus deserunt? Rerum blanditiis provident aliquam molestias unde.
+      Amet non sit nihil atque voluptatem eveniet vero voluptate praesentium voluptatum officiis, incidunt ullam, impedit obcaecati quod odit aut perspiciatis libero, aspernatur error quas iste vel consequuntur? Natus, beatae voluptatibus.
+      Vitae perferendis mollitia modi nulla numquam eaque sapiente quaerat et illum incidunt quam repudiandae, eos laudantium quas quae pariatur dolorum dolore autem quis! Nihil vitae ab, a natus molestiae beatae.
+      Dolorem qui eum odio illum. Sint, voluptas facilis sed vitae repudiandae commodi modi eveniet itaque nam earum voluptatem nobis deleniti quasi enim beatae, fugiat iure voluptate voluptatibus. Nobis, explicabo odit.
+      Sit placeat sapiente temporibus dolores, tenetur rem optio ipsa natus maxime corporis sunt debitis mollitia illum officia doloribus ea dolorem. Voluptatum doloremque ratione quibusdam autem minus. Facere quas nobis voluptates.
+      Aliquid molestiae dolores cum illum impedit alias culpa debitis repellendus sint. Sequi consequatur debitis aperiam adipisci impedit fugiat illum delectus provident similique recusandae, doloribus eveniet voluptates eaque corporis sint. Veniam.
+      Quasi dolore praesentium perferendis recusandae officia nam possimus? Aspernatur, dolore! Voluptates, reprehenderit eveniet? Autem cum ut exercitationem. Quaerat nesciunt suscipit, consequatur eaque totam commodi quos consequuntur quibusdam possimus eius nemo!
+      Aut commodi, unde aliquam optio excepturi magni ex perspiciatis praesentium doloribus accusamus perferendis a? Nostrum, dignissimos voluptate corporis quidem ratione recusandae voluptatem quaerat. Sed tempore optio voluptas nam dolorem consequatur?<br><br>
+      Iusto reprehenderit modi obcaecati provident deleniti consectetur ab quis totam eum, nihil eveniet, suscipit neque cupiditate dignissimos officia? Reiciendis quam ducimus eos cupiditate? Quas quae ex animi laborum, id aut.
+      Omnis, dolorem ullam? Voluptate, perspiciatis. Dolore sapiente impedit similique accusantium hic recusandae magnam. Totam illo itaque esse sint repudiandae tempore minima quibusdam voluptates ab corporis quaerat excepturi, voluptatem ad ducimus.
+      Natus voluptate quas itaque incidunt. Perspiciatis incidunt repellendus, nostrum laboriosam quis amet quam aliquid facilis mollitia officiis, minus distinctio ex maiores esse maxime ab vero blanditiis tenetur, rem rerum atque.
+      Quod reprehenderit earum, alias tempora qui obcaecati itaque cupiditate voluptas, vel velit nam odit, error odio? Nostrum dolore aut, quibusdam quia atque nisi. Quam fugit eaque dolorem doloremque dolor. Esse!
+      A fugiat quod quibusdam, deleniti impedit aperiam quasi nobis? Debitis reiciendis possimus voluptas. Similique officia reiciendis, eveniet iure voluptatum perspiciatis sequi rem pariatur. Quas neque commodi, sit distinctio vitae libero!
+      Alias, quidem voluptate eligendi est ipsa ut, consequuntur nostrum mollitia sunt quasi consequatur provident distinctio nesciunt quam ab repellat, neque debitis esse praesentium maxime laudantium. Debitis accusantium minima soluta amet.
+      Laborum, libero. Repellendus eaque pariatur accusantium quaerat facere quis officia, eligendi modi quod. Id, commodi sequi maxime eum totam rerum tenetur obcaecati dolorum eveniet magnam modi saepe est cumque magni?
+      Minus, earum tempora eligendi dignissimos, quos, saepe mollitia laboriosam ipsam facilis rerum quaerat laudantium! Distinctio totam blanditiis quos debitis, sequi itaque voluptate eos quia inventore vitae atque similique, aspernatur nostrum.<br><br>
+      Quidem reprehenderit incidunt hic laboriosam, consectetur repellat iure ipsam officiis eaque dicta ex inventore vel et magnam modi unde. At aut possimus, error nesciunt delectus quod itaque. Obcaecati, beatae commodi!
+      Rerum optio veniam repellat excepturi dolor, ex dolores earum magni veritatis nobis deserunt odit amet, eligendi aliquid autem debitis! Deleniti distinctio nesciunt facilis iste enim dolorum omnis adipisci nisi praesentium.
+      Iusto facere esse praesentium? Modi soluta dicta molestiae voluptas eum voluptate quia suscipit asperiores! Consectetur culpa delectus ut quos, porro veniam voluptatibus minima totam modi et veritatis corporis iusto aperiam.
+      Fugit saepe explicabo, quibusdam vero at eum totam, id ad perspiciatis sit ut aspernatur quae reiciendis. Ratione recusandae in fuga delectus, aliquid eos illum modi neque quasi, laudantium harum. Aliquam.
+      Architecto deserunt ab, corrupti sapiente rerum aliquid rem, molestias impedit nam, aut adipisci maiores facere saepe recusandae laboriosam et laudantium reiciendis sit dolorum doloremque fugiat tempore magnam consequatur voluptatem. Eos!
+    </div>
+  </div>
+  
+  
+    <div class="accordion container mt-3" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Explore the place in Jaffna
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Explore the place Island-wide
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Explore the place world-wide
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+          Explore the place world-wide
+          </button>
+        </h2>
+        <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      </div>
+    
+
+
+  <footer>
+  <div class="container mt-5" id="scrollspyHeading4">
+    <div class="row">
+      <div class="col d-flex justify-content-between bg-success-subtle align-items-center p-3">
+        <div><h5>Copyright</h5></div>
+        <div class="">
+          <i class="bi bi-1-circle"></i>
+          <i class="bi bi-2-circle"></i>
+          <i class="bi bi-3-circle"></i>
+          <i class="bi bi-4-circle"></i>
+          <i class="bi bi-5-circle"></i>
+        </div>
+      </div>
+    </div>
+    <div class="row bg-success p-5 text-light">
+      <div class="col-md-2 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus maxime voluptatum quod, impedit voluptatibus vitae ducimus aspernatur? Harum ullam aliquam possimus ut atque quibusdam natus autem nam provident. Officia, eius!</div>
+      <div class="col-md-2 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure perspiciatis accusamus eum aliquam nulla nobis aliquid? Est qui doloremque aliquid non, impedit vitae voluptates consectetur velit tenetur explicabo distinctio veniam?</div>
+      <div class="col-md-2 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nam corporis cum magnam modi maxime et recusandae excepturi. Sit est, cupiditate quibusdam veritatis dolorum illo neque dolores laudantium dicta perferendis.</div>
+      <div class="col-md-2 my-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente illum consectetur totam repellat incidunt natus dignissimos distinctio quidem reiciendis accusantium corporis laboriosam nihil officiis, laudantium fuga molestias recusandae exercitationem delectus!</div>
+      <div class="col-md-2 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro itaque veniam beatae ea temporibus nisi veritatis consequuntur aliquam doloremque, provident voluptas dolores delectus distinctio facere est quos, obcaecati ullam atque!</div>
+      <div class="col-md-2 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus maxime voluptatum quod, impedit voluptatibus vitae ducimus aspernatur? Harum ullam aliquam possimus ut atque quibusdam natus autem nam provident. Officia, eius!</div>
+    </div>
+    <div class="row">
+      <div class="col d-flex justify-content-center bg-success-subtle pt-3">
+        <p>Copyright 2024</p>
+      </div>
+    </div>
+  </div>
+  </footer>
+</div>
+  
+
+
+
+
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
